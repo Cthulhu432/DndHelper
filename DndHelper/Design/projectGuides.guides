@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ProjectGuidesConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectItemGuides>
+    <ProjectItemGuide TargetFile="Forms\CharacterSheet.xaml">
+      <GuideModels>
+        <GuideModel>
+          <Guides>
+            <Guide Alignment="Top" Position="10" />
+            <Guide Alignment="Left" Position="288" />
+            <Guide Alignment="Top" Position="104" />
+            <Guide Alignment="Left" Position="61" />
+            <Guide Alignment="Top" Position="179" />
+            <Guide Alignment="Left" Position="167" />
+            <Guide Alignment="Left" Position="140" />
+            <Guide Alignment="Left" Position="127" />
+            <Guide Alignment="Top" Position="189" />
+          </Guides>
+        </GuideModel>
+      </GuideModels>
+    </ProjectItemGuide>
+  </ProjectItemGuides>
+</ProjectGuidesConfiguration>

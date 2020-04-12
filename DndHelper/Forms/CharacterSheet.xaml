@@ -1,0 +1,60 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DndHelper.Forms"
+      xmlns:DndHelper="clr-namespace:DndHelper" x:Class="DndHelper.Forms.CharacterSheet"
+      mc:Ignorable="d" 
+      d:DesignHeight="849" d:DesignWidth="726"
+      Title="CharacterSheet">
+
+    <Grid>
+        <Image x:Name="___DndHelper_component_Image2_png" Margin="0.905,105.807,424.462,16.854" Source="/DndHelper;component/Image2.png" Stretch="Fill" d:IsLocked="True"/>
+        <Grid x:Name="CharacterInfo" Margin="22,10,10,757.842" d:IsLocked="True">
+            <TextBox x:Name="name" HorizontalAlignment="Left" Height="37.085" Margin="0,21.044,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="278" BorderThickness="0"/>
+            <TextBox x:Name="level" HorizontalAlignment="Left" Height="25" Margin="288.763,0,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="130.302" FontSize="14" IsReadOnlyCaretVisible="True"/>
+            <TextBox x:Name="race" HorizontalAlignment="Left" Height="25" Margin="425.58,0,0,0" TextWrapping="Wrap" Text="Человек" VerticalAlignment="Top" Width="130.302" FontSize="14" IsReadOnlyCaretVisible="True"/>
+            <TextBox x:Name="expirience" HorizontalAlignment="Left" Height="25" Margin="288.763,44.919,0,0" TextWrapping="Wrap" Text="27900" VerticalAlignment="Top" Width="130.302" FontSize="14"/>
+            <TextBox x:Name="alignment" HorizontalAlignment="Left" Height="25" Margin="425.58,44.919,0,0" TextWrapping="Wrap" Text="ХН" VerticalAlignment="Top" Width="130.302" FontSize="14"/>
+            <TextBox x:Name="gender" HorizontalAlignment="Left" Height="25" Margin="562.396,44.919,0,0" TextWrapping="Wrap" Text="Мужской" VerticalAlignment="Top" Width="130.301" FontSize="14"/>
+            <TextBox x:Name="classes" HorizontalAlignment="Left" Height="25" Margin="562.396,0,0,0" TextWrapping="Wrap" Text="Колдун" VerticalAlignment="Top" Width="130.301" FontSize="14" IsReadOnlyCaretVisible="True"/>
+            <TextBlock x:Name="levelLabel" HorizontalAlignment="Left" Height="15" Margin="290.067,22.044,0,0" TextWrapping="Wrap" Text="Уровень" VerticalAlignment="Top" Width="130.301"/>
+            <TextBlock x:Name="raceLabel" HorizontalAlignment="Left" Height="15" Margin="426.883,22.044,0,0" TextWrapping="Wrap" Text="Раса" VerticalAlignment="Top" Width="130.301"/>
+            <TextBlock x:Name="classLabel" HorizontalAlignment="Left" Height="15" Margin="563.699,22.044,0,0" TextWrapping="Wrap" Text="Классы" VerticalAlignment="Top" Width="130.301"/>
+            <TextBlock x:Name="experienceLabel" HorizontalAlignment="Left" Height="15" Margin="290.067,66.158,0,0" TextWrapping="Wrap" Text="Опыт" VerticalAlignment="Top" Width="130.301"/>
+            <TextBlock x:Name="alignmentLabel" HorizontalAlignment="Left" Height="15" Margin="426.883,66.158,0,0" TextWrapping="Wrap" Text="Мировоззрение" VerticalAlignment="Top" Width="130.301"/>
+            <TextBlock x:Name="genderLabel" HorizontalAlignment="Left" Height="15" Margin="563.699,66.158,0,0" TextWrapping="Wrap" Text="Пол" VerticalAlignment="Top" Width="130.301"/>
+        </Grid>
+        <TextBlock x:Name="proficiencyLabel" HorizontalAlignment="Left" Height="18.79" Margin="172.255,127.282,0,0" TextWrapping="Wrap" Text="Бонус мастерства" VerticalAlignment="Top" Width="112.737" d:IsLocked="True"/>
+        <TextBox x:Name="proficiency" HorizontalAlignment="Left" Height="43.748" Margin="117.476,115.523,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="43.748" FontSize="24" TextAlignment="Center" Background="{x:Null}" BorderThickness="0" d:IsLocked="True"/>
+        <Grid x:Name="Stats" Margin="10.525,137.333,438,-51.621" d:IsLocked="True">
+            <TextBlock x:Name="strengthLabel" HorizontalAlignment="Left" Height="16.343" TextWrapping="Wrap" VerticalAlignment="Top" Width="74.579" TextAlignment="Center" Text="Сила" Margin="8,1,0,0"/>
+            <TextBox x:Name="strength" HorizontalAlignment="Left" Height="40.576" Margin="19.085,22.226,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="52.411" TextAlignment="Center" FontSize="24" Background="{x:Null}" BorderThickness="0"/>
+            <TextBox x:Name="strengthBonus" HorizontalAlignment="Left" Height="25.36" Margin="25.473,68.438,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="39.072" TextAlignment="Center" FontSize="14" FontWeight="Bold" BorderThickness="0" Background="{x:Null}"/>
+            <TextBlock x:Name="dexterityLabel" HorizontalAlignment="Left" Height="16.343" TextWrapping="Wrap" VerticalAlignment="Top" Width="74.579" TextAlignment="Center" Margin="8,115.591,0,0" Text="Ловкость"/>
+            <TextBox x:Name="dexterity" HorizontalAlignment="Left" Height="40.576" Margin="19.085,136.817,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="52.411" TextAlignment="Center" FontSize="24" Background="{x:Null}" BorderThickness="0"/>
+            <TextBox x:Name="dexterityBonus" HorizontalAlignment="Left" Height="25.36" Margin="25.473,183.029,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="39.072" TextAlignment="Center" FontSize="14" FontWeight="Bold" BorderThickness="0" Background="{x:Null}"/>
+            <TextBlock x:Name="constitutionLabel" HorizontalAlignment="Left" Height="16.343" TextWrapping="Wrap" VerticalAlignment="Top" Width="74.579" TextAlignment="Center" Margin="8,230.557,0,0" Text="Телосложение"/>
+            <TextBox x:Name="constitution" HorizontalAlignment="Left" Height="40.576" Margin="19.085,251.783,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="52.411" TextAlignment="Center" FontSize="24" Background="{x:Null}" BorderThickness="0"/>
+            <TextBox x:Name="constitutionBonus" HorizontalAlignment="Left" Height="25.36" Margin="25.473,297.995,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="39.072" TextAlignment="Center" FontSize="14" FontWeight="Bold" BorderThickness="0" Background="{x:Null}"/>
+            <TextBlock x:Name="intelligenceLabel" HorizontalAlignment="Left" Height="16.343" TextWrapping="Wrap" VerticalAlignment="Top" Width="74.579" TextAlignment="Center" Margin="8,345.523,0,0" Text="Интеллект"/>
+            <TextBox x:Name="intelligence" HorizontalAlignment="Left" Height="40.576" Margin="19.085,366.749,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="52.411" TextAlignment="Center" FontSize="24" Background="{x:Null}" BorderThickness="0"/>
+            <TextBox x:Name="intelligenceBonus" HorizontalAlignment="Left" Height="25.36" Margin="25.473,412.961,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="39.072" TextAlignment="Center" FontSize="14" FontWeight="Bold" BorderThickness="0" Background="{x:Null}"/>
+            <TextBlock x:Name="wisdomLabel" HorizontalAlignment="Left" Height="16.344" TextWrapping="Wrap" VerticalAlignment="Top" Width="74.579" TextAlignment="Center" Margin="8,459.737,0,0" Text="Мудрость"/>
+            <TextBox x:Name="wisdom" HorizontalAlignment="Left" Height="40.577" Margin="19.085,480.963,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="52.411" TextAlignment="Center" FontSize="24" Background="{x:Null}" BorderThickness="0"/>
+            <TextBox x:Name="wisdomBonus" HorizontalAlignment="Left" Height="25.36" Margin="25.473,527.175,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="39.072" TextAlignment="Center" FontSize="14" FontWeight="Bold" BorderThickness="0" Background="{x:Null}"/>
+            <TextBlock x:Name="charismaLabel" HorizontalAlignment="Left" Height="16.343" TextWrapping="Wrap" VerticalAlignment="Top" Width="74.579" TextAlignment="Center" Margin="8,573.201,0,0" Text="Харизма"/>
+            <TextBox x:Name="charisma" HorizontalAlignment="Left" Height="40.576" Margin="19.085,594.427,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="52.411" TextAlignment="Center" FontSize="24" Background="{x:Null}" BorderThickness="0"/>
+            <TextBox x:Name="charismaBonus" HorizontalAlignment="Left" Height="25.36" Margin="25.473,640.639,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="39.072" TextAlignment="Center" FontSize="14" FontWeight="Bold" BorderThickness="0" Background="{x:Null}"/>
+        </Grid>
+        <CheckBox x:Name="strSSTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="126,181,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
+        <TextBox x:Name="strSS" HorizontalAlignment="Left" Height="18" Margin="146,180,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
+        <TextBlock x:Name="strSSLabel" HorizontalAlignment="Left" Height="18" Margin="177,180,0,0" TextWrapping="Wrap" Text="Сила" VerticalAlignment="Top" Width="111"/>
+        <CheckBox x:Name="dexSSTrained_Copy" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="126,201,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
+        <TextBox x:Name="dexSS_Copy" HorizontalAlignment="Left" Height="18" Margin="146,200,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
+        <TextBlock x:Name="dexSSLabel_Copy" HorizontalAlignment="Left" Height="18" Margin="177,200,0,0" TextWrapping="Wrap" Text="Ловкость" VerticalAlignment="Top" Width="111"/>
+        <Image x:Name="___DndHelper_component_Image5_png" Margin="313,106,215,582" Source="/DndHelper;component/Image5.png" Stretch="Fill"/>
+        <Image x:Name="___DndHelper_component_Image6_png" Margin="517,106,10,582" Source="/DndHelper;component/Image6.png" Stretch="Fill"/>
+    </Grid>
+</Page>

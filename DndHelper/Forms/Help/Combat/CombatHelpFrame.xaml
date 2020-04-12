@@ -1,0 +1,16 @@
+﻿<Page x:Class="DndHelper.Forms.Help.Combat.CombatHelpFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DndHelper.Forms.Help.Combat"
+      mc:Ignorable="d" 
+      d:DesignHeight="928" d:DesignWidth="760   "
+      Title="CombatHelpFrame">
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="43.208" Margin="47.424,31.616,0,0" TextWrapping="Wrap" Text="Подсказки по сражению" VerticalAlignment="Top" Width="148.595"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Margin="47.424,79.824,0,0" VerticalAlignment="Top" Source="imageExample.png" Height="174.041" Width="315.156"/>
+
+    </Grid>
+</Page>

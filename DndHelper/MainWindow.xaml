@@ -5,10 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DndHelper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="900" Width="1200">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="Resources/Backgrounds/parchment-background1.png" Stretch="UniformToFill"/>
-        </Grid.Background>
+        Title="MainWindow" Height="950" Width="1500">
+    <Grid ShowGridLines="True" Style="{StaticResource parchmentGrid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50px"></RowDefinition>
+            <RowDefinition Height="869"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="726"></ColumnDefinition>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="characterSheetFrame" Content="Frame" HorizontalAlignment="Left" Height="849" Grid.Row="1" VerticalAlignment="Top" Width="726" Source="/DndHelper;component/Forms/CharacterSheet.xaml"/>
+        <Frame x:Name="secondPageFrame" Content="Frame" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Source="/DndHelper;component/Forms/Help/HelpPage.xaml" Height="Auto" Width="Auto
+               "/>
     </Grid>
 </Window>
