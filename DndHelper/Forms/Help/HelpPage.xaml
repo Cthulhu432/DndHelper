@@ -8,17 +8,14 @@
       d:DesignHeight="869" d:DesignWidth="766"
       Title="HelpPage">
 
-    <Grid>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{x:Null}">
-            <TabItem Header="Сражение" Background="{x:Null}">
-                <Grid>
-                    <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="Auto" Source="/DndHelper;component/Forms/Help/Combat/CombatHelpFrame.xaml"/>
-                </Grid>
-            </TabItem>
-            <TabItem Header="TabItem">
-                <Grid/>
-            </TabItem>
-        </TabControl>
-
-    </Grid>
+    <TabControl x:Name="tabControl" Background="{x:Null}">
+        <TabItem Header="Сражение" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Grid>
+                <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="Auto" Source="/DndHelper;component/Forms/Help/Combat/CombatHelpFrame.xaml" Grid.ColumnSpan="2"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="TabItem">
+            <Grid/>
+        </TabItem>
+    </TabControl>
 </Page>

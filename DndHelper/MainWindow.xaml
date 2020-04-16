@@ -9,14 +9,16 @@
     <Grid ShowGridLines="True" Style="{StaticResource parchmentGrid}">
         <Grid.RowDefinitions>
             <RowDefinition Height="50px"></RowDefinition>
-            <RowDefinition Height="869"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="726"></ColumnDefinition>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Frame x:Name="characterSheetFrame" Content="Frame" HorizontalAlignment="Left" Height="849" Grid.Row="1" VerticalAlignment="Top" Width="726" Source="/DndHelper;component/Forms/CharacterSheet.xaml"/>
-        <Frame x:Name="secondPageFrame" Content="Frame" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Source="/DndHelper;component/Forms/Help/HelpPage.xaml" Height="Auto" Width="Auto
-               "/>
+
+        <ScrollViewer Grid.Column="1" Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0">
+                <Frame x:Name="secondPageFrame" Content="Frame" Source="/DndHelper;component/Forms/Help/HelpPage.xaml"/>
+            </ScrollViewer>
     </Grid>
 </Window>

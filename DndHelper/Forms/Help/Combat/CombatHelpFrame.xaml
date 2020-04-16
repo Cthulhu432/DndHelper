@@ -5,12 +5,34 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DndHelper.Forms.Help.Combat"
       mc:Ignorable="d" 
-      d:DesignHeight="928" d:DesignWidth="760   "
-      Title="CombatHelpFrame">
+      d:DesignHeight="928" d:DesignWidth="760"
+      Title="CombatHelpFrame" ScrollViewer.VerticalScrollBarVisibility="Visible">
 
-    <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="43.208" Margin="47.424,31.616,0,0" TextWrapping="Wrap" Text="Подсказки по сражению" VerticalAlignment="Top" Width="148.595"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Margin="47.424,79.824,0,0" VerticalAlignment="Top" Source="imageExample.png" Height="174.041" Width="315.156"/>
-
-    </Grid>
+    <WrapPanel x:Name="content" Orientation="Vertical">
+        <Grid x:Name="battleOrder" VerticalAlignment="Top" Margin="10,10,10,0">
+            <HeaderedItemsControl x:Name="battleOrderControl" Header="Порядок сражения" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+                <Label Content="Порядок сражения" FontSize="16" FontWeight="Bold" Background="{x:Null}"/>
+                <RichTextBox Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run Text="   Обычно боевая сцена это схватка двух сторон, яростные выпады оружия, финты, парирование, маневрирование и накладывание заклинаний. Игра организовывает этот хаос в циклы раундов и ходов. Раунд представляет примерно 6 секунд, прошедших в игровом мире. Во время раунда все участники сражения совершают ходы. Порядок ходов определяется в начале боевой сцены, когда все совершают проверку инициативы. Когда все совершат свои ходы, начинается новый раунд, если одна сторона пока не победила другую."/>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+                <Image x:Name="image" HorizontalAlignment="Left" VerticalAlignment="Top" Source="imageExample.png" Stretch="None"/>
+            </HeaderedItemsControl>
+        </Grid>
+            <Grid x:Name="second" HorizontalAlignment="Stretch" Width="Auto" VerticalAlignment="Top" Margin="10,10,10,0">
+                <HeaderedItemsControl Header="Порядок сражения" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0">
+                    <Label Content="Неожиданность" FontSize="16" FontWeight="Bold"/>
+                    <RichTextBox Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14">
+                        <FlowDocument>
+                            <Paragraph>
+                            <Run Text="Отряд искателей приключений прокрадывается в лагерь разбойников и выскакивает из-за деревьев. Студенистый куб скользит по коридору и поглощает одного из персонажей. В этих ситуациях одна из сторон сражения застаёт другую врасплох. То, кто захвачен врасплох, определяет Мастер. Если ни одна из сторон не старалась вести себя тихо, группы автоматически замечают друг друга. В противном случае Мастер сравнивает проверки Ловкости (Скрытность) тех, кто прячется, с пассивным значением Мудрости (Внимательность) противоположной стороны. Все персонажи и чудовища, не заметившие угрозы, в начале сцены захвачены врасплох."/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                </HeaderedItemsControl>
+            </Grid>
+    </WrapPanel>
 </Page>
