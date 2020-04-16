@@ -10,12 +10,17 @@
 
     <TabControl x:Name="tabControl" Background="{x:Null}">
         <TabItem Header="Сражение" Background="{x:Null}" BorderBrush="{x:Null}">
-            <Grid>
-                <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="Auto" Source="/DndHelper;component/Forms/Help/Combat/CombatHelpFrame.xaml" Grid.ColumnSpan="2"/>
-            </Grid>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <Grid>
+                    <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="Auto" Source="/DndHelper;component/Forms/Help/Combat/CombatHelpFrame.xaml" Grid.ColumnSpan="2"/>
+                </Grid>
+            </ScrollViewer>
         </TabItem>
         <TabItem Header="TabItem">
-            <Grid/>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <Grid>
+                </Grid>
+            </ScrollViewer>
         </TabItem>
     </TabControl>
 </Page>
