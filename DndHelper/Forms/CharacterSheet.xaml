@@ -10,7 +10,7 @@
       Title="CharacterSheet">
 
     <Grid>
-        <Grid x:Name="CharacterInfo" Margin="22,10,10,757.842" d:IsLocked="True">
+        <Grid x:Name="CharacterInfo" Margin="22,10,10,757.842">
             <TextBox x:Name="name" HorizontalAlignment="Left" Height="37.085" Margin="0,21.044,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="278" BorderThickness="0"/>
             <TextBox x:Name="level" HorizontalAlignment="Left" Height="25" Margin="288.763,0,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="130.302" FontSize="14" IsReadOnlyCaretVisible="True"/>
             <TextBox x:Name="race" HorizontalAlignment="Left" Height="25" Margin="425.58,0,0,0" TextWrapping="Wrap" Text="Человек" VerticalAlignment="Top" Width="130.302" FontSize="14" IsReadOnlyCaretVisible="True"/>
@@ -25,9 +25,19 @@
             <TextBlock x:Name="alignmentLabel" HorizontalAlignment="Left" Height="15" Margin="426.883,66.158,0,0" TextWrapping="Wrap" Text="Мировоззрение" VerticalAlignment="Top" Width="130.301"/>
             <TextBlock x:Name="genderLabel" HorizontalAlignment="Left" Height="15" Margin="563.699,66.158,0,0" TextWrapping="Wrap" Text="Пол" VerticalAlignment="Top" Width="130.301"/>
         </Grid>
-        <Grid x:Name="Proficiency" Margin="117.863,114,441.008,691.252" d:IsLocked="True">
-            <TextBlock x:Name="proficiencyLabel" HorizontalAlignment="Left" Height="18.79" Margin="54.392,13.282,0,0" TextWrapping="Wrap" Text="Бонус мастерства" VerticalAlignment="Top" Width="112.737"/>
-            <TextBox x:Name="proficiency" HorizontalAlignment="Left" Height="43.748" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="43.748" FontSize="24" TextAlignment="Center" Background="{x:Null}" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Grid x:Name="Proficiency" Margin="117.863,114,460,691.252" d:IsLocked="True">
+            <Image x:Name="___DndHelper_component_Image14_png" Margin="0" Source="/DndHelper;component/Image14.png" Stretch="Fill"/>
+            <TextBlock x:Name="proficiencyLabel" HorizontalAlignment="Center" Height="18.79" Margin="43.748,12.5,5.171,12.458" TextWrapping="Wrap" Text="Бонус мастерства" VerticalAlignment="Center" Width="99.218" RenderTransformOrigin="0.5,0.5">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.165"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.164"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBox x:Name="proficiency" HorizontalAlignment="Left" Height="43.748" TextWrapping="Wrap" Text="2" VerticalAlignment="Center" Width="43.748" FontSize="24" TextAlignment="Center" Background="{x:Null}" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         </Grid>
         <Grid x:Name="Stats" Margin="13.775,137.333,624.75,16.854" d:IsLocked="True">
             <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
@@ -98,94 +108,94 @@
             </WrapPanel>
             <Label x:Name="savingThrowsLabel" Content="Спасброски" Height="26.25" Margin="0,129.75,0,0" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" FontSize="14"/>
         </Grid>
-        <Grid x:Name="Skills" Margin="117.863,350.666,433.137,73.667" Width="175" d:IsLocked="True">
+        <Grid x:Name="Skills" Margin="117.863,350.666,433.137,89" Width="175" d:IsLocked="True">
             <WrapPanel Margin="8,8,0,0">
-                <Grid x:Name="Athletics" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Athletics" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="athleticsTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="athleticsValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="athleticsLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Атлетика (сил)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Acrobatics" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Acrobatics" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="acrobaticsTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="acrobaticsValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="acrobaticsLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Акробатика (лов)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="SleightOfHand" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="SleightOfHand" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="sleightOfHandTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="sleightOfHandValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="sleightOfHandLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Ловкость рук (лов)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Stealth" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Stealth" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="stealthTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="stealthValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="stealthLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Скрытность (лов)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="History" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="History" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="historyTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="historyValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="historyLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="История (инт)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Investigation" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Investigation" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="investigationTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="investigationValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="investigationLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Расследование (инт)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Religion" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Religion" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="religionTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="religionValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="religionLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Религия (инт)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Arcana" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Arcana" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="arcanaTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="arcanaValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="arcanaLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Магия (инт)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Perception" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Perception" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="perceptionTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="perceptionValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="perceptionLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Восприятие (муд)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Survival" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Survival" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="survivalTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="survivalValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="survivalLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Выживание (муд)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Medicine" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Medicine" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="medicineTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="medicineValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="medicineLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Медицина (муд)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="AnimalHandling" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="AnimalHandling" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="animalHandlingTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="animalHandlingValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="animalHandlingLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Обр. с жив. (муд)  " VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Nature" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Nature" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="natureTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="natureValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="natureLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Природа (муд)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Insight" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Insight" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="insightTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="insightValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="insightLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Проницат. (муд)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Performance" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Performance" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="performanceTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="performanceValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="performanceLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Выступление (хар)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Intimidation" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Intimidation" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="intimidationTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="intimidationValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="intimidationLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Запугивание (хар)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Deception" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Deception" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="deceptionTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="deceptionValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="deceptionLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Обман (хар)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
                 </Grid>
-                <Grid x:Name="Persuation" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,2">
+                <Grid x:Name="Persuation" HorizontalAlignment="Stretch" Height="20" Width="162" Margin="0,0,0,1">
                     <CheckBox x:Name="persuationTrained" Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="0,1,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.511,0.522"/>
                     <TextBox x:Name="persuationValue" HorizontalAlignment="Left" Height="18" Margin="20,0,0,0" TextWrapping="Wrap" Text="+2" VerticalAlignment="Top" Width="22.435" Background="{x:Null}" BorderThickness="0"/>
                     <TextBlock x:Name="persuationLabel" HorizontalAlignment="Left" Height="18" Margin="51,0,0,0" TextWrapping="Wrap" Text="Убеждение (хар)" VerticalAlignment="Top" Width="111" FontFamily="Segoe UI Semilight"/>
@@ -193,11 +203,59 @@
             </WrapPanel>
             <Label x:Name="SkillMods" Content="Навыки" Height="26.25" Margin="0,129.75,0,0" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" FontSize="14"/>
         </Grid>
-        <Image x:Name="___DndHelper_component_Image5_png" Margin="313,106,215,582" Source="/DndHelper;component/Image5.png" Stretch="Fill"/>
-        <Image x:Name="___DndHelper_component_Image6_png" Margin="517,106,10,582" Source="/DndHelper;component/Image6.png" Stretch="Fill"/>
-        <Grid x:Name="PassivePerception" Margin="117.863,788.398,441.008,16.854" d:IsLocked="True">
-            <TextBlock x:Name="passivePerceptionLabel" HorizontalAlignment="Left" Height="18.79" Margin="54.392,13.282,-16,0" TextWrapping="Wrap" Text="Пассивное воспр." VerticalAlignment="Top" Width="128.737"/>
-            <TextBox x:Name="passivePerception" HorizontalAlignment="Left" Height="43.748" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="43.748" FontSize="24" TextAlignment="Center" Background="{x:Null}" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <WrapPanel x:Name="PassiveSenses" Margin="117.863,769.771,441.008,10" Orientation="Vertical">
+            <Grid x:Name="PassivePerception" Height="30" Width="167.129" Margin="0,0,0,4">
+                <Image x:Name="___DndHelper_component_Image16_png" Margin="0" Source="/DndHelper;component/Image16.png" Stretch="Fill"/>
+                <TextBlock x:Name="passivePerceptionLabel" HorizontalAlignment="Left" Height="18.79" Margin="43,5.605,0,5.605" TextWrapping="Wrap" Text="Пассивное воспр." VerticalAlignment="Center" Width="115.137"/>
+                <TextBox x:Name="passivePerception" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="12" VerticalAlignment="Center" Width="30" FontSize="18" TextAlignment="Center" Background="{x:Null}" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="2,0,0,0" Padding="0,-2,0,0"/>
+            </Grid>
+            <Grid x:Name="PassiveInvestigation" Height="30" Width="167.129" Margin="0,0,0,4">
+                <Image x:Name="___DndHelper_component_Image16_png1" Margin="0" Source="/DndHelper;component/Image16.png" Stretch="Fill"/>
+                <TextBlock x:Name="passiveInvestigationLabel" HorizontalAlignment="Left" Height="18.79" Margin="43,5.605,0,5.605" TextWrapping="Wrap" Text="Пассивное расслед." VerticalAlignment="Center" Width="115.137"/>
+                <TextBox x:Name="passiveInvestigation" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="10" VerticalAlignment="Center" Width="30" FontSize="18" TextAlignment="Center" Background="{x:Null}" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="2,0,0,0" Padding="0,-2,0,0"/>
+            </Grid>
+        </WrapPanel>
+        <Grid x:Name="ArmorClass" HorizontalAlignment="Left" Height="62.951" Margin="446.667,105,0,0" VerticalAlignment="Top" Width="55" d:IsLocked="True">
+            <Image x:Name="___DndHelper_component_Image9_png" Margin="0" Source="/DndHelper;component/Image9.png" Stretch="Fill"/>
+            <TextBox x:Name="armorClass" HorizontalAlignment="Center" Height="30" Margin="0,0,0,11" TextWrapping="Wrap" Text="15" VerticalAlignment="Center" Width="30" FontSize="20" TextAlignment="Center"/>
+            <Label x:Name="armorClassLabel" Content="КД" HorizontalAlignment="Center" Margin="0,0,0,9" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Padding="0" UseLayoutRounding="True"/>
+        </Grid>
+        <Grid x:Name="Initiative" HorizontalAlignment="Left" Height="45.882" Margin="446.667,172.951,0,0" VerticalAlignment="Top" Width="56.03" d:IsLocked="True">
+            <Image x:Name="___DndHelper_component_Image10_png" Margin="0" Source="/DndHelper;component/Image10.png" Stretch="Uniform" VerticalAlignment="Top"/>
+            <TextBox x:Name="initiative" HorizontalAlignment="Center" Height="27.499" Margin="0,2,0,0" Text="20" VerticalAlignment="Top" Width="32.334" FontSize="20" HorizontalContentAlignment="Center" UseLayoutRounding="False" MaxLines="1" AutoWordSelection="True" TextAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label x:Name="initiativeLabel" Content="Инициатива" Height="11" Margin="0,0,0,0" VerticalAlignment="Bottom" Padding="0" FontSize="9" VerticalContentAlignment="Center" HorizontalAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="Speed" Margin="448,223.833,223.303,573.379" d:IsLocked="True">
+            <Image x:Name="___DndHelper_component_Image11_png" Source="/DndHelper;component/Image11.png" Stretch="Fill"/>
+            <TextBox x:Name="speed" HorizontalAlignment="Center" Height="31.5" Margin="4.265,4.5,4.266,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="46.166" FontSize="20" HorizontalContentAlignment="Center" Padding="0,1,0,0"/>
+            <Label x:Name="speedLabel" Content="Скорость" HorizontalAlignment="Center" Margin="0,0,0,3" VerticalAlignment="Bottom" Padding="0" VerticalContentAlignment="Center" FontSize="10"/>
+        </Grid>
+        <Grid x:Name="HP" HorizontalAlignment="Left" Height="153" Margin="313,114,0,0" VerticalAlignment="Top" Width="128.667" d:IsLocked="True">
+            <Image x:Name="___DndHelper_component_Image8_png" Margin="0" Source="/DndHelper;component/Image8.png" Stretch="Fill"/>
+            <TextBox x:Name="tempHP" HorizontalAlignment="Center" Height="23" Margin="43.048,8.125,43.047,0" TextWrapping="Wrap" Text="333" VerticalAlignment="Top" Width="42.572" FontSize="22" TextAlignment="Center" Padding="0,-4,0,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Label x:Name="tempHPLabel" Content="Врем. ОЗ" HorizontalAlignment="Left" Margin="43.048,29,0,0" VerticalAlignment="Top" Padding="0" Height="12.46" FontSize="10"/>
+            <Grid Margin="13.762,47,14.095,45.236">
+                <TextBox x:Name="maxHP" HorizontalAlignment="Center" Margin="56,11.946,0,9.983" TextWrapping="Wrap" Text="355" VerticalAlignment="Center" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="currentHP" HorizontalAlignment="Center" Margin="0,11.946,56,9.983" TextWrapping="Wrap" Text="355" VerticalAlignment="Center" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label x:Name="slash" Content="/" HorizontalAlignment="Center" Height="33.835" Margin="41.889,10.614,41.555,11.315" VerticalAlignment="Center" Width="17.366" FontSize="24" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            </Grid>
+            <TextBox x:Name="maxHP_Copy" HorizontalAlignment="Center" Margin="0,0,0,8" TextWrapping="Wrap" Text="355" VerticalAlignment="Bottom" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="DeathSS" HorizontalAlignment="Left" Height="58.951" Margin="514.333,109,0,0" VerticalAlignment="Top" Width="108.001" d:IsLocked="True">
+            <Image x:Name="___DndHelper_component_Image12_png" Margin="0" Source="/DndHelper;component/Image12.png" Stretch="Fill"/>
+            <WrapPanel x:Name="DeathSSSuccesses" Margin="39.001,7.333,5.835,35.451" Orientation="Horizontal" HorizontalAlignment="Right">
+                <CheckBox x:Name="deathSSSuccess1" Content="CheckBox" HorizontalAlignment="Left" Height="16.167" VerticalAlignment="Top" Width="16.166" Margin="0"/>
+                <CheckBox x:Name="deathSSSuccess2" Content="CheckBox" HorizontalAlignment="Left" Height="16.167" VerticalAlignment="Top" Width="16.166" Margin="0"/>
+                <CheckBox x:Name="deathSSSuccess3" Content="CheckBox" HorizontalAlignment="Left" Height="16.167" VerticalAlignment="Top" Width="16.166" Margin="0"/>
+            </WrapPanel>
+            <WrapPanel x:Name="DeathSSFailures" Margin="39.001,23.5,5.835,19.284" Orientation="Horizontal" HorizontalAlignment="Right">
+                <CheckBox x:Name="deathSSFailure1" Content="CheckBox" HorizontalAlignment="Left" Height="16.167" VerticalAlignment="Top" Width="16.166" Margin="0"/>
+                <CheckBox x:Name="deathSSFailure2" Content="CheckBox" HorizontalAlignment="Left" Height="16.167" VerticalAlignment="Top" Width="16.166" Margin="0"/>
+                <CheckBox x:Name="deathSSFailure3" Content="CheckBox" HorizontalAlignment="Left" Height="16.167" VerticalAlignment="Top" Width="16.166" Margin="0"/>
+            </WrapPanel>
+            <Label x:Name="deathSSSuccessLabel" Content="Успехи" HorizontalAlignment="Left" Height="12.167" Margin="8.5,7,0,0" VerticalAlignment="Top" Width="42.001" Padding="0" FontSize="10"/>
+            <Label x:Name="deathSSFailuresLabel" Content="Провалы" HorizontalAlignment="Left" Height="12.167" Margin="8.5,23.5,0,0" VerticalAlignment="Top" Width="42.001" Padding="0" FontSize="10"/>
+            <TextBlock x:Name="deathSSLabel" HorizontalAlignment="Center" Height="13.81" Margin="2.5,0,2.501,3.004" TextWrapping="Wrap" Text="Спасброски от смерти" VerticalAlignment="Bottom" Width="101.5" FontSize="9" TextAlignment="Center" FontFamily="Segoe UI Semilight"/>
         </Grid>
     </Grid>
 </Page>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DndHelper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="950" Width="1500">
+        Title="DnD 5e Helper" Height="950" Width="1500" Icon="D_20.png" WindowStartupLocation="CenterScreen">
     <Grid ShowGridLines="True" Style="{StaticResource parchmentGrid}">
         <Grid.RowDefinitions>
             <RowDefinition Height="50px"></RowDefinition>

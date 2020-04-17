@@ -121,7 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="Forms\MainWindow\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Icons\01 %282%29.png" />
@@ -4459,6 +4458,39 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Forms\Help\Combat\imageExample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="D_20.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
